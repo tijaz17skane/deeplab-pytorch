@@ -26,20 +26,19 @@ DATASET: cocostuff164k
 ### Dataset structure
 
 ```
-├── images
-│   ├── train2017
-│   │   ├── 000000000009.jpg
-│   │   └── ...
-│   └── val2017
-│       ├── 000000000139.jpg
-│       └── ...
-└── annotations
-    ├── train2017
-    │   ├── 000000000009.png
-    │   └── ...
-    └── val2017
-        ├── 000000000139.png
-        └── ...
+ProtoSegFolder
+├── proto-segmentation
+│   ├── deeplab_pytorch
+│   └── all other elements of the cloned repository
+└── datasets
+    ├── cityscapes
+    │   ├── gtfine
+    │   └── leftImg8Bit
+    └── task07_pancreas
+        ├── ImagesTs
+        ├── ImagesTr
+        ├── labelsTr
+        └── etc
 ```
 
 ## COCO-Stuff 10k
